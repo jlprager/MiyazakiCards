@@ -1,0 +1,195 @@
+body {
+	background-color: #B5B5FE;
+}
+
+#nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 900;
+}
+
+#nav-header > span {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 15px 10px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  float: right;
+}
+
+#nav-header a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-header a.active {
+  font-weight: bold;
+}
+
+.name {
+text-align: center;
+font-family: 'Poiret One';  
+color: #50505D;
+  margin-top: 60px;
+  font-size: 90px;
+}
+
+.about {
+  text-align: center;
+font-family: sans-serif;  
+  color: #50505D;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#cardsContainer{
+	text-align: center;
+	margin: 20px;
+}
+
+#heroCover {
+  background-image: url(hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 188px;
+  margin-top: 30px;
+}
+
+#mask{
+	background-color: rgba(0, 0 , 0, 0.75);
+	width: 100%;
+	height: 100%;
+}
+
+.card {
+	display: inline-block;
+	width: 255px;
+	height: 255px;
+	background-size: 255px 255px;
+	background-repeat: no-repeat;
+	border: 1px solid #1B1A1A;
+	border-radius: 35px;
+	margin: 25px 10px -5px;
+	font-family: arial;
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+.title{
+	position: absolute;
+  font-family: arial;
+	top: 7px;
+	width: 100%;
+  height: 35px;
+	overflow-y: scroll;
+	font-size: 30px;
+	color: #1E1F23;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cast {
+  position: absolute;
+  font-family: arial;
+  top: 70px;
+  width: 100%;
+  height: 20px;
+  overflow-y: scroll;
+  color: #1E1F23;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.synopsis {
+  position: absolute;
+  font-family: arial;
+  left: 15px;
+  top: 340px;
+  width: 90%;
+  height: 65px;
+  overflow-y: scroll;
+  color: #1E1F23;
+  text-align: left;
+  font-size: 16px;
+}
+
+.lightbox {
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  width: 75%;
+  height: 80%;
+  margin: 0 0 0 -37.5%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #6C6C82;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.poster{
+ width: 100%;
+ height: 360px;
+ border-radius: 20px 20px 0 0;
+ background-size: cover;
+ position: absolute;
+ background-repeat: no-repeat;
+ top: 0;
+} 
+
+#youtube{
+  margin-top: 100px;
+  width: 100%;
+  height: 225px;	
+}
+
+.gallery {
+  margin: 80px 15px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+.foo {
+  width: 40%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.gallery::-webkit-scrollbar { 
+  display: none; 
+}
+
+#mask {
+  position: fixed;
+  display: none;
+  opacity: .8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+#mask-container {
+  display: none;
+}
+
+#lightbox-container{
+  display: none;
+}
+
+
+
+
+

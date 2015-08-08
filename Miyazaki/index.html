@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <!-- Nav header -->
+  <div id="nav-header">
+    <span></span>
+    <span><a href="#">About</a></span>
+    <span><a href="#">Gallery</a></span> 
+    <span><a class="active" href="index.html">Home</a></span>
+  </div>
+
+  <!-- Name && Animation -->
+  <div class="name animated infinite pulse">Hayao Miyazaki</div>
+
+  <!-- Cover Photo -->
+  <div id="heroCover"></div>
+
+  <!-- About -->
+  <div class="about"> A Japanese film director, producer, screenwriter, animator, author, and manga artist best known for co-founding Studio Ghibli, a film and animation studio. Miyazaki's films often contain recurrent themes, like humanity's relationship with nature and technology, feminism, and the difficulty of maintaining a pacifist ethic. The protagonists of his films are often strong, independent girls or young women.</div>
+
+  <!-- Cards, Mask, Lightbox -->
+  <div id="cardsContainer"></div>
+  <div id="mask"></div>
+  <div id="lightboxContainer"></div>
+  
+
+  <!-- Thumbnail template -->
+  <script id="movieTemp" type="x-tmpl-mustache">
+  <div id="{{ id }}" class="card" style="background-image: url({{ poster }})"></div>
+  </script>  
+
+  <!-- Lightbox template. -->
+  <script id="lightboxTemp" type="x-tmpl-mustache">
+    <div class="lightbox">
+      <div class="title">{{ title }}</div>
+      <iframe id="youtube" type="text/html" src="{{ trailer }}" frameborder="0"></iframe>
+      <div class="cast">{{ cast }}</div>
+      <div class="synopsis">{{ synopsis }}</div>
+      <div class="row">
+        <div class="gallery">
+          <div class="foo" style="background-image: url({{ photoA }})"></div>
+          <div class="foo" style="background-image: url({{ photoB }})"></div>
+          <div class="foo" style="background-image: url({{ photoC }})"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="cards.js"></script>
+  
+</body>
+</html>
